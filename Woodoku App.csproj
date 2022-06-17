@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88F33DEA-58ED-41A8-A9A1-A87F8191C7C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Woodoku_App</RootNamespace>
+    <AssemblyName>Woodoku App</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\School Stuff\Projects\Woodoku\Woodoku Publish 2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>173E9ECA58427BC1974C2B47C485575B44C559FC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Woodoku App_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BestMove.cs" />
+    <Compile Include="DisplayBoard.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameController.cs" />
+    <Compile Include="GameState.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Permutations.cs" />
+    <Compile Include="Piece.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieceButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shape.cs" />
+    <Compile Include="Shapes.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Woodoku App_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_Step_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_Step_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2x2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_Step_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_Step_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_Step_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_Step_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down_Left_Stair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down_Right_Stair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ferb_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ferb_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ferb_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ferb_Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H_Five.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H_Four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H_Three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H_two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Helmet Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Helmet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Helmet_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inverted_L_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inverted_L_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inverted_L_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inverted_L_Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Joe Piece.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quadrant 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quadrant 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quadrant 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quandrant 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider_Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up_Left_Stair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up_Right_Stair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpSideDown_Helmet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V_Five.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V_Four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V_Three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V_Two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

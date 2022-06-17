@@ -1,0 +1,16 @@
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku App.csprojAssemblyReference.cache
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku_App.Form1.resources
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku App.csproj.GenerateResource.cache
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku App.csproj.CoreCompileInputs.cache
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku_App.Properties.Resource1.resources
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\bin\Debug\Woodoku App.exe.config
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\bin\Debug\Woodoku App.exe
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\bin\Debug\Woodoku App.pdb
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku App.exe
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku App.pdb
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\bin\Debug\Woodoku App.exe.manifest
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\bin\Debug\Woodoku App.application
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku App.TrustInfo.xml
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku App.exe.manifest
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku App.application
+C:\Users\ajkap\source\repos\Woodoku App\Woodoku App\obj\Debug\Woodoku_App.Properties.Resources.resources
