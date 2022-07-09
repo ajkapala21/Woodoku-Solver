@@ -2,7 +2,7 @@
 
 Download Woodoku Solver Finished.zip folder from main to install the windows form application and try it out.
 
-It took this solver 3 games to beat our highest scores that we had acheived over years of playing.
+It took this solver 3 games to beat the highest scores my friends and I had acheived over years of playing.
 
 Built essentially using a MVC format.
 The main classes are 1. GameState, which acts as a model and contains all data for a game.
